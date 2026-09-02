@@ -45,3 +45,17 @@ docker build -t ml-inference-api .
 
 ```bash
 docker run -d -p 8000:8000 --name ml-inference-container ml-inference-api
+### API Testing
+
+The API was successfully tested using Swagger UI at:
+
+```text
+http://localhost:8000/docs
+{
+  "text": "This product is excellent",
+  "prediction": "positive",
+  "probabilities": {
+    "negative": 0.1665,
+    "positive": 0.8335
+  }
+}
