@@ -33,3 +33,11 @@ Request:
 {
   "text": "This product is excellent"
 }
+## Docker Deployment
+
+The FastAPI application is containerized using Docker.
+
+### Build Docker Image
+
+```bash
+docker build -t ml-inference-api .
