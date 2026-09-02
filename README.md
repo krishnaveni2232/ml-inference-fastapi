@@ -41,9 +41,6 @@ The FastAPI application is containerized using Docker.
 
 ```bash
 docker build -t ml-inference-api .
-### Run Docker Container
-
-```bash
 docker run -d -p 8000:8000 --name ml-inference-container ml-inference-api
 ### API Testing
 
